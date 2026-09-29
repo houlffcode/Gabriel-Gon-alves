@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-09-29T19:17:29.203232+00:00",
+  "updatedAt": "2026-09-29T19:31:59.438869+00:00",
   "calendarName": "Agenda Pública | Gabriel Gonçalves",
   "publicCalendarUrl": "https://calendar.google.com/calendar/embed?src=deputadofederalgabriel1507%40gmail.com&ctz=America%2FSao_Paulo",
   "events": [
     {
-      "id": "29c64tp6rsmaeacuhgru0l51mh-google.com",
+      "id": "6sp68e1jcdj62b9kc4qj4b9k6tgj6b9ockojcb9h6gsjior2c4rm8pb6co-google.com",
       "title": "Busy",
       "description": "",
       "location": "",
-      "start": "2026-10-01T20:00:00+00:00",
-      "end": "2026-10-01T22:00:00+00:00",
+      "start": "2026-09-30T07:00:00+00:00",
+      "end": "2026-09-30T11:00:00+00:00",
       "allDay": false,
       "category": "atividade",
       "categoryLabel": "Atividade",
-      "addToCalendar": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Busy&dates=20261001T200000Z%2F20261001T220000Z&details=&location=",
-      "ics": "assets/data/events/29c64tp6rsmaeacuhgru0l51mh-google.com.ics"
+      "addToCalendar": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Busy&dates=20260930T070000Z%2F20260930T110000Z&details=&location=",
+      "ics": "assets/data/events/6sp68e1jcdj62b9kc4qj4b9k6tgj6b9ockojcb9h6gsjior2c4rm8pb6co-google.com.ics"
     }
   ]
 }
