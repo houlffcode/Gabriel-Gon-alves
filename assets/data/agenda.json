@@ -1,6 +1,20 @@
 {
-  "updatedAt": "2026-09-29T19:35:53.828520+00:00",
+  "updatedAt": "2026-09-29T19:39:00.823791+00:00",
   "calendarName": "Agenda Pública | Gabriel Gonçalves",
   "publicCalendarUrl": "https://calendar.google.com/calendar/embed?src=deputadofederalgabriel1507%40gmail.com&ctz=America%2FSao_Paulo",
-  "events": []
+  "events": [
+    {
+      "id": "7848pecnhokk9d18p0siltv2pq-google.com",
+      "title": "Ola, teste",
+      "description": "",
+      "location": "Canoas, RS, Brasil",
+      "start": "2026-10-01T05:00:00+00:00",
+      "end": "2026-10-01T06:00:00+00:00",
+      "allDay": false,
+      "category": "atividade",
+      "categoryLabel": "Atividade",
+      "addToCalendar": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Ola%2C+teste&dates=20261001T050000Z%2F20261001T060000Z&details=&location=Canoas%2C+RS%2C+Brasil",
+      "ics": "assets/data/events/7848pecnhokk9d18p0siltv2pq-google.com.ics"
+    }
+  ]
 }
