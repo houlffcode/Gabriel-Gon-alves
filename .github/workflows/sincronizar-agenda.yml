@@ -1,9 +1,9 @@
 name: Sincronizar Google Agenda
- 
+
 on:
-workflow_dispatch:
-schedule:
-- cron: "*/15 * * * *"
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
 
 permissions:
   contents: write
@@ -48,11 +48,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
           git add assets/data/agenda.json
           git add assets/data/events/
-
           git commit -m "Atualiza agenda publica"
-
           git pull --rebase origin main
           git push origin main
