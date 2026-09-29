@@ -11,7 +11,7 @@ permissions:
 
 concurrency:
   group: sincronizar-google-agenda
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   sincronizar:
@@ -20,11 +20,17 @@ jobs:
     steps:
       - name: Baixar repositorio
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
+      - name: Atualizar branch local
+        run: |
+          git pull --rebase origin main
 
       - name: Sincronizar Google Agenda
         run: python tools/sincronizar_agenda.py
@@ -48,4 +54,6 @@ jobs:
           git add assets/data/events/
 
           git commit -m "Atualiza agenda publica"
-          git push
+
+          git pull --rebase origin main
+          git push origin main
