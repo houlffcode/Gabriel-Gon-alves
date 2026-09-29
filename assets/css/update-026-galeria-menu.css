@@ -1,0 +1,62 @@
+/* Atualização 026: Galeria usa exatamente o mesmo comportamento visual do menu mobile das demais abas. */
+@media (max-width: 900px) {
+  body.page-gallery .mobile-nav {
+    display: block !important;
+    position: fixed;
+    z-index: 79;
+    left: var(--page-pad, 20px);
+    right: var(--page-pad, 20px);
+    top: 86px;
+    max-height: calc(100svh - 108px);
+    overflow: auto;
+    border: 1px solid rgba(255,255,255,.12) !important;
+    border-radius: 24px;
+    background: rgba(8,43,66,.97) !important;
+    box-shadow: 0 28px 70px rgba(3,20,31,.28) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    backdrop-filter: blur(16px) !important;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-18px) scale(.975);
+    transform-origin: top center;
+    transition: opacity .26s ease, transform .32s cubic-bezier(.2,.8,.2,1), visibility 0s linear .32s;
+  }
+  body.page-gallery .mobile-nav.open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+    transition-delay: 0s;
+  }
+  body.page-gallery .mobile-nav.is-closing {
+    opacity: 0;
+    visibility: visible;
+    pointer-events: none;
+    transform: translateY(-13px) scale(.98);
+  }
+  body.page-gallery .mobile-nav a {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    padding: 17px 19px !important;
+    border-bottom: 1px solid rgba(255,255,255,.09) !important;
+    color: #fff !important;
+    opacity: 0;
+    transform: translateY(-7px);
+    transition: opacity .22s ease, transform .26s ease, background .2s ease;
+  }
+  body.page-gallery .mobile-nav.open a { opacity: 1; transform: translateY(0); }
+  body.page-gallery .mobile-nav.open a:nth-child(1){transition-delay:.03s}
+  body.page-gallery .mobile-nav.open a:nth-child(2){transition-delay:.055s}
+  body.page-gallery .mobile-nav.open a:nth-child(3){transition-delay:.08s}
+  body.page-gallery .mobile-nav.open a:nth-child(4){transition-delay:.105s}
+  body.page-gallery .mobile-nav.open a:nth-child(5){transition-delay:.13s}
+  body.page-gallery .mobile-nav.open a:nth-child(6){transition-delay:.155s}
+  body.page-gallery .mobile-nav a:last-child { border-bottom: 0 !important; }
+  body.page-gallery .menu-button { z-index: 81; }
+}
+@media (max-width: 430px) {
+  body.page-gallery .mobile-nav { left: 10px; right: 10px; top: 78px; border-radius: 20px; }
+  body.page-gallery .mobile-nav a { padding: 15px 16px !important; }
+}
