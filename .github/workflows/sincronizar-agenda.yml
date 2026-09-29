@@ -1,0 +1,51 @@
+name: Sincronizar Google Agenda
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "7,22,37,52 * * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sincronizar-google-agenda
+  cancel-in-progress: true
+
+jobs:
+  sincronizar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Sincronizar Google Agenda
+        run: python tools/sincronizar_agenda.py
+
+      - name: Verificar alteracoes
+        id: changes
+        run: |
+          if git diff --quiet -- assets/data/agenda.json assets/data/events/; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Publicar agenda atualizada
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add assets/data/agenda.json
+          git add assets/data/events/
+
+          git commit -m "Atualiza agenda publica"
+          git push
