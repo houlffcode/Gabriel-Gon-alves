@@ -1,0 +1,2 @@
+Substitua hero.svg, perfil.svg e favicon.svg pelas imagens definitivas.
+Atualize os nomes nos arquivos HTML caso utilize .webp, .png ou .jpg.

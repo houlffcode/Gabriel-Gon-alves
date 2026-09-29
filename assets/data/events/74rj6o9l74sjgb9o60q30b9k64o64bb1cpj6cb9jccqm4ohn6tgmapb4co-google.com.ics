@@ -1,0 +1,12 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Agenda Publica//PT-BR
+BEGIN:VEVENT
+UID:74rj6o9l74sjgb9o60q30b9k64o64bb1cpj6cb9jccqm4ohn6tgmapb4co@google.com
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:Novo teste
+DESCRIPTION:
+LOCATION:Canoas Shopping\, Av. Guilherme Schell\, 6750 - Centro\, Canoas - RS\, 92310-564\, Brasil
+END:VEVENT
+END:VCALENDAR

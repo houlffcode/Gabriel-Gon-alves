@@ -1,0 +1,28 @@
+{
+  "videos": [
+    {
+      "title": "Auxílio à proteção animal",
+      "category": "Apoio a protetores",
+      "description": "Proposta sobre apoio direto a quem atua na proteção e no cuidado animal.",
+      "videoId": "LH7JAHticp0",
+      "url": "https://youtube.com/shorts/LH7JAHticp0?feature=share",
+      "platform": "YouTube Shorts"
+    },
+    {
+      "title": "Castração por Saturação",
+      "category": "Controle populacional",
+      "description": "Proposta sobre prevenção, castração e controle populacional animal.",
+      "videoId": "SDfClDUA8ok",
+      "url": "https://youtube.com/shorts/SDfClDUA8ok?feature=share",
+      "platform": "YouTube Shorts"
+    },
+    {
+      "title": "Responsabilização e monitoramento",
+      "category": "Combate aos maus-tratos",
+      "description": "Proposta sobre leis, responsabilização e enfrentamento aos maus-tratos.",
+      "videoId": "JCQhYJe_RSE",
+      "url": "https://youtube.com/shorts/JCQhYJe_RSE?feature=share",
+      "platform": "YouTube Shorts"
+    }
+  ]
+}

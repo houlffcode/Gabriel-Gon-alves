@@ -1,0 +1,32 @@
+/* Atualização 024: formulário externo sem iframe */
+.form-launch-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 34px;
+  padding: 38px 42px;
+  border: 1px solid rgba(255, 255, 255, .14);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, .07);
+  box-shadow: 0 22px 60px rgba(3, 20, 31, .16);
+}
+.form-launch-card h2 { margin: 8px 0 12px; color: #fff; }
+.form-launch-card p { max-width: 740px; margin: 0; color: rgba(255, 255, 255, .66); line-height: 1.7; }
+.form-launch-card .button { flex: 0 0 auto; white-space: nowrap; }
+.form-launch-notes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 18px;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, .55);
+  font-size: 11px;
+}
+.form-launch-notes span::before { content: '✓'; margin-right: 7px; color: var(--cyan); font-weight: 900; }
+@media (max-width: 780px) {
+  .form-launch-card { grid-template-columns: 1fr; padding: 30px; }
+  .form-launch-card .button { width: 100%; box-sizing: border-box; text-align: center; }
+}
+@media (max-width: 430px) {
+  .form-launch-card { gap: 25px; padding: 24px 20px; border-radius: 22px; }
+  .form-launch-notes { display: grid; }
+}

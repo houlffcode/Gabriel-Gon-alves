@@ -1,0 +1,18 @@
+/* Atualização 016: navegação completa e bloco de privacidade */
+@media (min-width: 901px) and (max-width: 1220px) {
+  .nav { gap: 12px !important; }
+  .desktop-nav { gap: 14px !important; flex: 1 1 auto; justify-content: center; }
+  .desktop-nav a { font-size: 9px !important; letter-spacing: .08em !important; white-space: nowrap; }
+  .nav-end { gap: 6px !important; }
+  .nav-end .icon-link { display: none !important; }
+  .nav-end .button.small { min-height: 38px; padding-inline: 13px !important; font-size: 11px; white-space: nowrap; }
+}
+@media (min-width: 901px) {
+  .desktop-nav a[href="galeria.html"] { display: inline-flex !important; visibility: visible !important; opacity: 1 !important; }
+}
+.privacy-banner .button { text-align: center; }
+.privacy-banner-inner > div { min-width: 0; }
+@media (max-width: 700px) {
+  .privacy-banner-inner { align-items: stretch !important; flex-direction: column !important; }
+  .privacy-banner .button { width: 100%; box-sizing: border-box; }
+}

@@ -1,0 +1,141 @@
+/* Atualizacao 009 - correcoes definitivas de logo e empilhamento */
+
+/* Logo: regra isolada e carregada por ultimo para nao depender do style.css principal. */
+a.brand.brand-image,
+footer .brand.brand-image,
+.drawer-top .brand.brand-image {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  flex: 0 0 auto !important;
+  width: 190px !important;
+  height: 58px !important;
+  max-width: 190px !important;
+  overflow: hidden !important;
+  line-height: 0 !important;
+}
+
+a.brand.brand-image > img,
+footer .brand.brand-image > img,
+.drawer-top .brand.brand-image > img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+footer .brand.brand-image {
+  width: 210px !important;
+  max-width: 210px !important;
+  height: 66px !important;
+}
+
+/* Empilhamento desktop. */
+@media (min-width: 901px) {
+  #propostas-detalhadas {
+    position: relative !important;
+    overflow: visible !important;
+    padding-bottom: 38vh !important;
+    isolation: isolate;
+  }
+
+  #propostas-detalhadas .container.proposal-stories,
+  #propostas-detalhadas .proposal-stories {
+    display: block !important;
+    position: relative !important;
+    overflow: visible !important;
+  }
+
+  #propostas-detalhadas .proposal-story {
+    position: sticky !important;
+    top: var(--stack-top, 96px) !important;
+    z-index: var(--stack-z, 20) !important;
+    width: 100% !important;
+    min-height: 575px;
+    margin: 0 0 24vh !important;
+    transform: translateY(0) scale(1);
+    transform-origin: center top !important;
+    transition: transform 120ms linear, filter 120ms linear, box-shadow 180ms ease !important;
+    will-change: transform, filter;
+    box-shadow: 0 24px 70px rgba(8, 43, 66, .13) !important;
+  }
+
+  #propostas-detalhadas .proposal-story:nth-child(1) {
+    --stack-top: 94px;
+    --stack-z: 21;
+    background: #fff !important;
+  }
+
+  #propostas-detalhadas .proposal-story:nth-child(2) {
+    --stack-top: 112px;
+    --stack-z: 22;
+    background: #eef9ff !important;
+  }
+
+  #propostas-detalhadas .proposal-story:nth-child(3) {
+    --stack-top: 130px;
+    --stack-z: 23;
+    margin-bottom: 0 !important;
+    background: #fff !important;
+  }
+
+  #propostas-detalhadas .proposal-story.stack-covered {
+    filter: saturate(.82) brightness(.95);
+  }
+}
+
+@media (min-width: 901px) and (max-height: 780px) {
+  #propostas-detalhadas .proposal-story {
+    min-height: 520px;
+    margin-bottom: 28vh !important;
+  }
+  #propostas-detalhadas .proposal-story:nth-child(1) { --stack-top: 82px; }
+  #propostas-detalhadas .proposal-story:nth-child(2) { --stack-top: 98px; }
+  #propostas-detalhadas .proposal-story:nth-child(3) { --stack-top: 114px; }
+}
+
+@media (max-width: 900px) {
+  a.brand.brand-image,
+  .drawer-top .brand.brand-image {
+    width: 150px !important;
+    max-width: 150px !important;
+    height: 48px !important;
+  }
+
+  footer .brand.brand-image {
+    width: 175px !important;
+    max-width: 175px !important;
+    height: 54px !important;
+  }
+
+  #propostas-detalhadas {
+    padding-bottom: 0 !important;
+  }
+
+  #propostas-detalhadas .proposal-stories {
+    display: grid !important;
+    gap: 22px !important;
+  }
+
+  #propostas-detalhadas .proposal-story {
+    position: relative !important;
+    top: auto !important;
+    z-index: auto !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    transform: none !important;
+    filter: none !important;
+  }
+}
+
+@media (max-width: 420px) {
+  a.brand.brand-image,
+  .drawer-top .brand.brand-image {
+    width: 128px !important;
+    max-width: 128px !important;
+    height: 42px !important;
+  }
+}
