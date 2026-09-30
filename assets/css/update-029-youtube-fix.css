@@ -1,0 +1,17 @@
+/* Atualizacao 029: restaura o card do YouTube e preserva Instagram/TikTok */
+.channel-card[data-social="youtube"] .official-brand-icon,
+.channel-card[data-social="instagram"] .official-brand-icon,
+.channel-card[data-social="tiktok"] .official-brand-icon {
+  display: block;
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+@media (max-width: 700px) {
+  .channel-card[data-social="youtube"] .official-brand-icon,
+  .channel-card[data-social="instagram"] .official-brand-icon,
+  .channel-card[data-social="tiktok"] .official-brand-icon {
+    width: 42px;
+    height: 42px;
+  }
+}
