@@ -1,20 +1,6 @@
 {
-  "updatedAt": "2026-10-02T20:59:42.859420+00:00",
+  "updatedAt": "2026-10-03T00:14:32.213821+00:00",
   "calendarName": "Agenda Pública | Gabriel Gonçalves",
   "publicCalendarUrl": "https://calendar.google.com/calendar/embed?src=deputadofederalgabriel1507%40gmail.com&ctz=America%2FSao_Paulo",
-  "events": [
-    {
-      "id": "cgq66dpi6oqjgb9i65j62b9k70sjgbb1c8o6ab9h69hm2dpk6dij0c9mc8-google.com",
-      "title": "Novo teste",
-      "description": "",
-      "location": "Porto Alegre, RS, Brasil",
-      "start": "2026-10-02T22:30:00+00:00",
-      "end": "2026-10-02T23:30:00+00:00",
-      "allDay": false,
-      "category": "atividade",
-      "categoryLabel": "Atividade",
-      "addToCalendar": "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Novo+teste&dates=20261002T223000Z%2F20261002T233000Z&details=&location=Porto+Alegre%2C+RS%2C+Brasil",
-      "ics": "assets/data/events/cgq66dpi6oqjgb9i65j62b9k70sjgbb1c8o6ab9h69hm2dpk6dij0c9mc8-google.com.ics"
-    }
-  ]
+  "events": []
 }
